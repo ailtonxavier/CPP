@@ -62,10 +62,8 @@ int main(){
     } else if(votosCandidato3 > (totalDeVotosValidos / 2)){
         cout << "parabens candidato 3";
     } else if((votosBranco + votosNulo) >= totalDeVotosValidos){
-        cout << "Democracia representativa eh uma piada, topo politico rouba.";
-    }
-    else {
+        cout << "Democracia representativa eh uma piada, todo politico rouba.";
+    } else {
         cout << "Ninguem atingiu mais que 50% dos votos.";
     }
-    
-}
+} // ok
