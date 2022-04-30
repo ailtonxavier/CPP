@@ -6,10 +6,13 @@ resultado. O algoritmo só deverá finalizar quando o usuário escolher a opçã
 */
 
 #include <iostream>
+#include <math.h>
 using namespace std;
 int main(){
     int menu = 1;
     float base, altura, raio, triangulo, quadrado, retangulo, trapezio, circulo, resultado, base_menor;
+    double pi = 3.141593;
+
     while(menu != 6){
         cout << "--------------------\n        MENU        \n--------------------\n1 - Triangulo\n2 - Quadrado\n3 - Retangulo\n4 - Trapezio\n5 - Circulo\n6 - Sair\n--------------------\nDigite sua opcao: ";
         cin >> menu;
@@ -42,11 +45,13 @@ int main(){
                 cout << "Digite o lado da altura: ";
                 cin >> altura;
                 resultado = ((base + base_menor) * altura) / 2;
-                cout << "A area do retangulo eh " << resultado << "m2" << endl; break;
+                cout << "A area do trapezio eh " << resultado << "m2" << endl; break;
             case 5: 
                 cout << "Digite o raio do circulo: ";
-                cin >> raio; break;
+                cin >> raio;
+                resultado = pi * pow(raio, 2);
+                cout << "A area do trapezio eh " << resultado << "m2" << endl; break;
             case 6: menu = 6; break;
         }
     }
-}
+} //ok
