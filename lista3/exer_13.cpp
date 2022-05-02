@@ -9,13 +9,17 @@ quadrangulares são 1, 4, 9, 16, 25, ..., ou seja, 1x1, 2x2, 3x3, 4x4, ...
 using namespace std;
 
 int main(){
-    int quadrado;
-    cout << "Digite um numero e direi se eh quadrangular";
+    int quadrado, a = -1;
+    cout << "Digite um numero e direi se eh quadrangular: ";
     cin >> quadrado;
-    while(){
-        
+    while(a < quadrado){
+        a++;
+        if((a * a) == quadrado){
+            cout << "Eh quadrangular\n";
+            a = quadrado;
+        } else if((a * a) > quadrado) {
+            cout << "Nao eh quadrangular\n";
+            a = quadrado;
+        }
     }
-
-
-
 }
