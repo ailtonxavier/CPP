@@ -7,7 +7,7 @@ seja, se a sua leitura em qualquer direção é a mesma.
 using namespace std;
 int main(){
   bool flag = true;
-  int i, t = 5;
+  int i, t = 6;
   int v[t];
   for(i = 0; i < t; i++){
     cout << "Digite o valor na posicao " << i << " do vetor: ";
@@ -19,6 +19,7 @@ int main(){
       flag = true;
     } else {
       flag = false;
+      i = t/2;
     }
   }
 
