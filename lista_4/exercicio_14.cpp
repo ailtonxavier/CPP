@@ -6,7 +6,7 @@ seja, se a sua leitura em qualquer direção é a mesma.
 #include <iostream>
 using namespace std;
 int main(){
-  bool flag = true;
+  bool flag;
   int i, t = 6;
   int v[t];
   for(i = 0; i < t; i++){
