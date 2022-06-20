@@ -14,7 +14,8 @@ int main(){
   getline(cin, frase);
   cout << "Digite uma palavra contida ou nao na frase: ";
   getline(cin, palavra);
-  t1 = frase.size(); t2 = palavra.size();
+  t1 = frase.size();
+  t2 = palavra.size();
   for(i = 0; i < t1; i++){
     for(j = 0; j < t2; j++){
       if(frase[i] == palavra[j]){      
